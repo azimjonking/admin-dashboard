@@ -1,190 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== UNICONS ===============-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
     <!--=============== BOXICONS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Responsive Admin Dashboard</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
-        <nav class="nav container">
+      <nav class="nav container">
+        <a href="index.html" class="nav_logo">
+          <img src="assets/img/favicon.png" alt="" class="nav_logo-img" />
+          Zendash
+        </a>
 
-            <a href="index.html" class="nav_logo">
-                <img src="assets/img/favicon.png" alt="" class="nav_logo-img"> Zendash
-            </a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="uil uil-estate nav_icon"></i>
+                <span class="link_name">Dashboard</span>
+              </a>
+            </li>
 
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="uil uil-files-landscapes nav_icon"></i>
+                <span class="link_name">Content</span>
+              </a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <i class="uil uil-estate nav_icon"></i>
-                            <span class="link_name">Dashboard</span>
-                        </a>
-                    </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="uil uil-chart nav_icon"></i>
+                <span class="link_name">Analytics</span>
+              </a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <i class="uil uil-files-landscapes nav_icon"></i>
-                            <span class="link_name">Content</span>
-                        </a>
-                    </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="uil uil-thumbs-up nav_icon"></i>
+                <span class="link_name">Like</span>
+              </a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <i class="uil uil-chart nav_icon"></i>
-                            <span class="link_name">Analytics</span>
-                        </a>
-                    </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="uil uil-comments nav_icon"></i>
+                <span class="link_name">Comment</span>
+              </a>
+            </li>
 
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <i class="uil uil-thumbs-up nav_icon"></i>
-                            <span class="link_name">Like</span>
-                        </a>
-                    </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="uil uil-signout nav_icon"></i>
+                <span class="link_name">Logout</span>
+              </a>
+            </li>
+          </ul>
 
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <i class="uil uil-comments nav_icon"></i>
-                            <span class="link_name">Comment</span>
-                        </a>
-                    </li>
+          <div class="nav_close" id="nav-close">
+            <i class="uil uil-times"></i>
+          </div>
+        </div>
 
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <i class="uil uil-signout nav_icon"></i>
-                            <span class="link_name">Logout</span>
-                        </a>
-                    </li>
-
-                </ul>
-
-                <div class="nav_close" id="nav-close">
-                    <i class="uil uil-times"></i>
-                </div>
-
-            </div>
-
-            <div class="nav_toggle" id="nav-toggle">
-                <i class="uil uil-list-ui-alt"></i>
-            </div>
-
-        </nav>
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="uil uil-list-ui-alt"></i>
+        </div>
+      </nav>
     </header>
 
     <!--=============== MAIN ===============-->
     <main class="main container">
-        <div class="right">
+      <div class="right">
+        <div class="profit">
+          <h3 class="profit_title">Congratulations Oliver</h3>
 
-            <div class="profit">
-                <h3 class="profit_title">Congratulations Oliver</h3>
+          <div class="profit_details">
+            <img src="assets/img/Trofi.png" alt="" />
 
-                <div class="profit_details">
-                    <img src="assets/img/Trofi.png" alt="">
+            <div class="profit_data">
+              <h3>$2000k</h3>
+              <span
+                ><i class="uil uil-arrow-up"></i> 0.75% since last year</span
+              >
+              <p>You have done 99.8% target sales reached today</p>
+              <small>Today 620 minutes ago</small>
+            </div>
+          </div>
+        </div>
 
-                    <div class="profit_data">
-                        <h3>$2000k</h3>
-                        <span><i class="uil uil-arrow-up"></i> 0.75% since last year</span>
-                        <p>You have done 99.8% target sales reached today</p>
-                        <small>Today 620 minutes ago</small>
+        <div class="best_sellers">
+          <h3 class="seller_title">Weekly Best Sellers</h3>
+
+          <div class="seller_profile">
+            <img src="assets/img/seller-1.jpg" alt="" class="seller_img" />
+            <h3 class="sales_name">Mozelle Belt</h3>
+            <div class="sales_box">
+              <span class="sales">624 Sales</span>
+            </div>
+          </div>
+
+          <div class="seller_profile">
+            <img src="assets/img/seller-2.jpg" alt="" class="seller_img" />
+            <h3 class="sales_name">Rose</h3>
+            <div class="sales_box">
+              <span class="sales">520 Sales</span>
+            </div>
+          </div>
+
+          <div class="seller_profile">
+            <img src="assets/img/seller-3.jpg" alt="" class="seller_img" />
+            <h3 class="sales_name">Alex Ranold</h3>
+            <div class="sales_box">
+              <span class="sales">480 Sales</span>
+            </div>
+          </div>
+
+          <div class="seller_profile">
+            <img src="assets/img/seller-4.jpg" alt="" class="seller_img" />
+            <h3 class="sales_name">Jessic</h3>
+            <div class="sales_box">
+              <span class="sales">300 Sales</span>
+            </div>
+          </div>
+
+          <div class="seller_profile">
+            <img src="assets/img/seller-5.jpg" alt="" class="seller_img" />
+            <h3 class="sales_name">Dylan</h3>
+            <div class="sales_box">
+              <span class="sales">253 Sales</span>
+            </div>
+          </div>
+
+          <div class="seller_profile">
+            <img src="assets/img/seller-6.jpg" alt="" class="seller_img" />
+            <h3 class="sales_name">Rebecca</h3>
+            <div class="sales_box">
+              <span class="sales">223 Sales</span>
+            </div>
+          </div>
+
+          <div class="seller_profile">
+            <img src="assets/img/seller-7.jpg" alt="" class="seller_img" />
+            <h3 class="sales_name">Mark Cessidy</h3>
+            <div class="sales_box">
+              <span class="sales">107 Sales</span>
+            </div>
+          </div>
+
+          <div class="seller_profile">
+            <img src="assets/img/seller-2.jpg" alt="" class="seller_img" />
+            <h3 class="sales_name">Rose</h3>
+            <div class="sales_box">
+              <span class="sales">520 Sales</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="left">
+
+            <div class="stats_container">
+
+                <div class="stats_item">
+                    <div class="stats_header">
+                        <div class="stats_icon">
+                            <i class="uil uil-favorite"></i>
+                        </div>
+                        <h3 class="stats_title">Sales</h3>
                     </div>
+
+                    <div class="stats_body">
+                        <div class="stats_data">
+                            <div class="stats_data-number">59467</div>
+                            <div class="stats_data-percentage">
+                                <span class="percentage_volume">High</span>
+                                <span class="stats_number">311</span>
+                                <i class="uil uil-arrow-up"></i>
+                            </div>
+                        </div>
+                        <p class="stats_text">Total for this month</p>
+                    </div>
+
                 </div>
+
+                <div class="stats_item">
+                    <div class="stats_header">
+                        <div class="stats_icon">
+                            <i class="uil uil-shopping-cart"></i>
+                        </div>
+                        <h3 class="stats_title">Purchases</h3>
+                    </div>
+
+                    <div class="stats_body">
+                        <div class="stats_data">
+                            <div class="stats_data-number">39645</div>
+                            <div class="stats_data-percentage">
+                                <span class="percentage_volume">Low</span>
+                                <span class="stats_number">0.21</span>
+                                <i class="uil uil-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="stats_text">Total for this month</p>
+                    </div>
+                    
+                </div>
+
+                <div class="stats_item">
+                    <div class="stats_header">
+                        <div class="stats_icon">
+                            <i class="uil uil-download-alt"></i>
+                        </div>
+                        <h3 class="stats_title">Downloads</h3>
+                    </div>
+
+                    <div class="stats_body">
+                        <div class="stats_data">
+                            <div class="stats_data-number">44148</div>
+                            <div class="stats_data-percentage">
+                                <span class="percentage_volume">Low</span>
+                                <span class="stats_number">1.12</span>
+                                <i class="uil uil-arrow-down"></i>
+                            </div>
+                        </div>
+                        <p class="stats_text">Total for this month</p>
+                    </div>
+                    
+                </div>
+
             </div>
 
-            <div class="best_sellers">
-                <h3 class="seller_title">Weekly Best Sellers</h3>
+            <div class="sales_container">
+                <div class="top_products">
+                    <h3 class="product_title">Top Selling Products</h3>
 
-                <div class="seller_profile">
-                    <img src="assets/img/seller-1.jpg" alt="" class="seller_img">
-                    <h3 class="sales_name">Mozelle Belt</h3>
-                    <div class="sales_box">
-                        <span class="sales">624 Sales</span>
+                    <div class="product_details">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="product_item">
+                                            <img src="assets/img/1.jpg" alt="" class="product_item-img">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-
-                <div class="seller_profile">
-                    <img src="assets/img/seller-2.jpg" alt="" class="seller_img">
-                    <h3 class="sales_name">Rose</h3>
-                    <div class="sales_box">
-                        <span class="sales">520 Sales</span>
-                    </div>
-                </div>
-
-                <div class="seller_profile">
-                    <img src="assets/img/seller-3.jpg" alt="" class="seller_img">
-                    <h3 class="sales_name">Alex Ranold</h3>
-                    <div class="sales_box">
-                        <span class="sales">480 Sales</span>
-                    </div>
-                </div>
-
-                <div class="seller_profile">
-                    <img src="assets/img/seller-4.jpg" alt="" class="seller_img">
-                    <h3 class="sales_name">Jessic</h3>
-                    <div class="sales_box">
-                        <span class="sales">300 Sales</span>
-                    </div>
-                </div>
-
-                <div class="seller_profile">
-                    <img src="assets/img/seller-5.jpg" alt="" class="seller_img">
-                    <h3 class="sales_name">Dylan</h3>
-                    <div class="sales_box">
-                        <span class="sales">253 Sales</span>
-                    </div>
-                </div>
-
-                <div class="seller_profile">
-                    <img src="assets/img/seller-6.jpg" alt="" class="seller_img">
-                    <h3 class="sales_name">Rebecca</h3>
-                    <div class="sales_box">
-                        <span class="sales">223 Sales</span>
-                    </div>
-                </div>
-
-                <div class="seller_profile">
-                    <img src="assets/img/seller-7.jpg" alt="" class="seller_img">
-                    <h3 class="sales_name">Mark Cessidy</h3>
-                    <div class="sales_box">
-                        <span class="sales">107 Sales</span>
-                    </div>
-                </div>
-
-                <div class="seller_profile">
-                    <img src="assets/img/seller-2.jpg" alt="" class="seller_img">
-                    <h3 class="sales_name">Rose</h3>
-                    <div class="sales_box">
-                        <span class="sales">520 Sales</span>
-                    </div>
-                </div>
-
             </div>
 
         </div>
     </main>
 
     <!--=============== FOOTER ===============-->
-    <footer class="footer">
-        
-    </footer>
+    <footer class="footer"></footer>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>

@@ -21,7 +21,7 @@
     --smaller-font-size: .75rem;
 
     /*========== Font weight ==========*/
-    --font-medium: 500;
+    --font-medium: 400;
     --font-semibold: 600;
 }
 
@@ -83,7 +83,7 @@ img {
 .header {
     width: 100%;
     background-color: var(--first-color);
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
 }
 
 .nav {
@@ -173,6 +173,78 @@ img {
 
 /*=============== RIGHT ===============*/
 
+.profit {
+    padding: 1.5rem;
+    background-color: var(--container-color);
+    border-radius: .625rem;
+}
+
+.profit_title {
+    font-size: var(--h3-font-size);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.profit_details {
+    text-align: center;
+}
+
+.profit_data h3 {
+    margin-top: 2rem;
+    font-size: var(--biggest-font-size);
+}
+
+.profit_data span {
+    font-size: var(--small-font-size);
+}
+
+.profit_data p {
+    font-size: var(--small-font-size);
+    margin-top: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+.best_sellers {
+    padding: 1.5rem;
+    background-color: var(--container-color);
+    border-radius: .625rem;
+    margin-top: 1.5rem;
+}
+
+.seller_title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.seller_profile {
+    display: flex;
+    align-items: center;
+}
+
+.seller_profile:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.seller_img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.seller_name {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.sales_box {
+    margin-left: auto;
+    background-color: var(--body-color);
+    color: var(--title-color);
+    padding: 6px 10px;
+    border-radius: 50px;
+    font-size: var(--smaller-font-size);
+}
 
 /*=============== LEFT ===============*/
 

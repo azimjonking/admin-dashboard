@@ -509,7 +509,129 @@ img {
     margin-left: auto;
 }
 
+.order_container {
+    padding: 1.5rem;
+    background-color: var(--container-color);
+    border-radius: .625rem;
+}
 
+.order_title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.order_details {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.order_container thead th {
+    background-color: var(--body-color);
+    font-weight: var(--font-medium);
+    text-align: left;
+    font-size: var(--small-font-size);
+}
+
+.order_container tr th, .order_container tr td {
+    padding: 15px 10px;
+    border-left: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+    font-size: var(--small-font-size);
+}
+
+.order_container tr th:last-child, .order_container tr td:last-child {
+    border-right: 1px solid #dee2e6;
+}
+
+.order_container tr:last-child td {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.order_container tr:nth-of-type(even) {
+    background-color: #f4f5fb;
+}
+
+.order_container tr th:nth-child(1),
+.order_container tr td:nth-child(1) {
+    width: 223px;
+}
+
+.order_container tr th:nth-child(2),
+.order_container tr td:nth-child(2) {
+    width: 140px;
+}
+
+.order_container tr th:nth-child(3),
+.order_container tr td:nth-child(3) {
+    width: 110px;
+}
+
+.order_container tr th:nth-child(4),
+.order_container tr td:nth-child(4) {
+    width: 110px;
+}
+
+.order_container tr th:nth-child(5),
+.order_container tr td:nth-child(5) {
+    width: 145px;
+}
+
+.order_container tr th:nth-child(6),
+.order_container tr td:nth-child(6) {
+    width: 100px;
+    text-align: center;
+}
+
+.order_item {
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+
+.order_img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.order_item-title {
+    font-size: var(--small-font-size);
+}
+
+.text_blue {
+    color: #6146d6;
+}
+
+.text_yellow {
+    color: #fdbf0d;
+}
+
+.text_green {
+    color: #49bf2d;
+}
+
+.text_red {
+    color: #f34335;
+}
+
+.edit {
+    margin-right: .25rem;
+}
+
+.trash,
+.edit {
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.trash:hover {
+    color: #f34335;
+}
+
+.edit:hover {
+    color: #163eaf;
+}
 
 /*=============== FOOTER ===============*/
 

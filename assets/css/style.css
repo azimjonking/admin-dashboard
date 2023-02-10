@@ -242,7 +242,7 @@ img {
 
 .sales_box {
     margin-left: auto;
-    background-color: var(--body-color);
+    background-color: #f4f5fb;
     color: var(--title-color);
     padding: 6px 10px;
     border-radius: 50px;
@@ -368,7 +368,7 @@ img {
 
 .sales_container tr td {
     padding: .75rem;
-    border-top: 1px solid var(--body-color);
+    border-top: 1px solid #dee2e6;
 }
 
 .sales_container tr td:nth-child(1) {
@@ -635,14 +635,99 @@ img {
 
 /*=============== FOOTER ===============*/
 
+.footer {
+    margin-top: 2rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer_container {
+    padding: 2rem 0;
+}
+
+.footer_copy {
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+    .stats_container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.6rem;
+    }
+}
 
-@media screen and (min-width: 767px) {}
+@media screen and (min-width: 767px) {
+    .nav {
+        height: 5rem;
+        column-gap: 3rem;
+    }
+
+    .nav_toggle,
+    .nav_close {
+        display: none;
+    }
+
+    .nav_logo {
+        font-size: var(--h2-font-size);
+    }
+
+    .nav_logo-img {
+        width: 2.25rem;
+    }
+
+    .nav_list {
+        flex-direction: row;
+        column-gap: 1rem;
+    }
+
+    .nav_link {
+        font-size: 1rem;
+    }
+
+    .nav_icon {
+        font-size: 1.25rem;
+    }
+
+    .stats_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sales_container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 1.6rem;
+    }
+
+    .top_products {
+        margin-bottom: 0;
+    }
+}
+
 
 /* For large devices */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .nav_list {
+        column-gap: 2rem;
+    }
+}
 
-@media screen and (min-width: 1216px) {}
+@media screen and (min-width: 1216px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 1.6rem;
+    }
+
+    .right {
+        order: 1;
+        margin-bottom: 0;
+    }
+}

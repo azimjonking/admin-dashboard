@@ -21,7 +21,7 @@
     --smaller-font-size: .75rem;
 
     /*========== Font weight ==========*/
-    --font-medium: 400;
+    --font-medium: 500;
     --font-semibold: 600;
 }
 
@@ -254,6 +254,7 @@ img {
 .stats_container {
     display: grid;
     row-gap: 1.6rem;
+    margin-bottom: 2rem;
 }
 
 .stats_item {
@@ -334,6 +335,118 @@ img {
     font-size: var(--smaller-font-size);
     color: #f8f9fa;
 }
+
+.sales_container {
+    margin-bottom: 2rem;
+}
+
+.top_products {
+    padding: 1.5rem 0;
+    background-color: var(--container-color);
+    border-radius: .625rem;
+    margin-bottom: 1.5rem;
+}
+
+.product_title {
+    padding-left: 1.5rem;
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.product_details {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    border-spacing: 0;
+    width: 100%;
+    white-space: nowrap;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.sales_container tr td {
+    padding: .75rem;
+    border-top: 1px solid var(--body-color);
+}
+
+.sales_container tr td:nth-child(1) {
+    width: 223px;
+    padding-left: 1.5rem;
+}
+
+.sales_container tr td:nth-child(2) {
+    width: 140px;
+}
+
+.sales_container tr td:nth-child(3) {
+    width: 110px;
+    text-align: center;
+}
+
+.product_item {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.product_item-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.product_item-title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: .25rem;
+}
+
+.product_item-rating {
+    color: #f3a403;
+}
+
+.badge {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 8rem;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+}
+
+.badge-success-light {
+    background-color: rgba(29, 171, 45, .15);
+    color: #36b37e;
+}
+
+.badge-danger-light {
+    background-color: rgba(250, 92, 124, .15);
+    color: #f94859;
+}
+
+.badge-info-light {
+    background-color: rgba(3, 85, 208, .1);
+    color: #0a7ffb;
+}
+
+.badge-secondary-light {
+    background-color: rgba(230, 113, 59, .15);
+    color: #fa713b;
+}
+
+.product_sales {
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+    margin-bottom: .25rem;
+}
+
+.product_sale-title {
+    font-size: var(--small-font-size);
+}
+
 
 /*=============== FOOTER ===============*/
 
